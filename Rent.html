@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cards.css">
+        <!--Box-Icons-Link-->
+        <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!--Google-fonts-Link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <a href="#" class="logo">
+            <h2>Adham</h2>
+        </a>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="Buy.html">Buying</a></li>
+            <li><a style="color: #fff; " href="#">Renting</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="h-btn">
+            <a href="#" class="h-btn1">Login</a>
+            <a href="#" class="h-btn2">Sign Up</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    
+      
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--login Section-->
+  
+
+
+    <section class="services" id="services">
+
+        <div  class="car">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="titlepage">
+                    <h2><span class="All">Rent</span> The Dream House </h2>
+                    <span>Experience the journey of renting your dream house with us!</span>
+                 </div>
+              </div>
+           </div>  
+
+           <div class="container-car-s">
+            <div class="input-filter">
+                <input type="text" name="" id="filter" class="filter" placeholder="Search by place" onkeyup="searchCar()">
+            </div>
+           </div>
+
+<div class="card-lists" id="card-lists">
+     <div class="services-container">
+        <div class="box">
+            <div class="box-img">
+                <img src="img/rent1.jpeg" alt="">
+            </div>
+            <div class="card-body">
+            <p class="House-rooms">12 Rooms</p>
+            <p class="House-beds-baths">4 Beds</p>
+            <p class="House-beds-baths">4 Baths</p>
+            <h3 class="card-title">NYC</h3>
+            <h2>$12,000 | $399 <span>/Day</span></h2>
+            <a href="#" class="btn" data-car-name="2023 BMW M4" data-per-day-price="$399">Rent Now</a>
+           </div>
+        </div>
+         
+         <div class="box">
+            
+            <div class="box-img">
+                <img src="img/rent2.jpeg" alt="">
+            </div>
+            <div class="card-body">
+                <p class="House-rooms">12 Rooms</p>
+                <p class="House-beds-baths">4 Beds</p>
+                <p class="House-beds-baths">4 Baths</p>
+            <h3 class="card-title">California</h3>
+            <h2>$12,000 | $399 <span>/Day</span></h2>
+            <a href="#" class="btn" data-car-name="2023 BMW M4" data-per-day-price="$399">Rent Now</a>
+           </div>
+        </div>
+
+         <div class="box">
+            
+            <div class="box-img">
+                <img src="img/rent3.jpeg" alt="">
+            </div>
+            <div class="card-body">
+                <p class="House-rooms">12 Rooms</p>
+                <p class="House-beds-baths">4 Beds</p>
+                <p class="House-beds-baths">4 Baths</p>
+            <h3 class="card-title">London</h3>
+            <h2>$12,000 | $399 <span>/Day</span></h2>
+            <a href="#" class="btn" data-car-name="2023 BMW M4" data-per-day-price="$399">Rent Now</a>
+           </div>
+        </div>
+
+
+        <div class="box">
+            
+            <div class="box-img">
+                <img src="img/rent4.jpeg" alt="">
+            </div>
+            <div class="card-body">
+                <p class="House-rooms">12 Rooms</p>
+                <p class="House-beds-baths">4 Beds</p>
+                <p class="House-beds-baths">4 Baths</p>
+            <h3 class="card-title">Dubai</h3>
+            <h2>$12,000 | $399 <span>/Day</span></h2>
+            <a href="#" class="btn" data-car-name="2023 BMW M4" data-per-day-price="$399">Rent Now</a>
+           </div>
+        </div>
+</section>
+
+
+<script src="js/cards.js"></script>
+</body> 
+</html>
